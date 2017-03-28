@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>vente-web/title>
+    <link rel="stylesheet" href="icon.css">
+    <title>vente-web</title>
   </head>
 
   <body>
 
     <header>
-      <nav>
-        <a href="#">connexion</a>
-        <a href="#">Créer un compte</a>
-        <a href="#">Nous contacter</a>
+      <img src="images/logo.png">
+      <nav class="haut">
+        <a href="#"><span class="icon-location2"></span><br>Mon magasin</a>
+        <a href="#"><span class="icon-user"></span><br>Mon compte</a>
+        <a href="#"><span class="icon-shopping-cart"></span><br>Panier</a>
       </nav>
       <input type="text" name="" value="">
-      <img src="" alt="">
     </header>
 
-    <nav>
+    <nav class="gauche">
       <p>Produits</p>
       <a href="#">Ordinateur portable</a>
       <a href="#">Ordinateur de bureau</a>
       <a href="#">Composant</a>
+
     </nav>
 
     <section class="ipd">
@@ -35,11 +37,48 @@
     </section>
 
     <section class="top">
+      <h2><span class="icon-trophy"></span>Top vente</h2>
       <!-- le top des ventes du site-->
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+      <article class="a1">
+        <img src="images/pcp1.png" alt="">
+        <h3>PC Gamer Asus GX800VH(KBL)-GY004T </h3>
+          <ul>
+            <li>Taille de l'écran : 18,4 pouces</li>
+            <li>Processeur : Intel Core i7</li>
+            <li>Stockage total : 3 x SSD 512 Go</li>
+            <li>Mémoire vive : 64 Go</li>
+          </ul>
+          <p></p>
+      </article>
+
+      <article class="a2">
+        <img src="images/pb1.png" alt="">
+        <h3>Unité centrale Asus K31AN-FR062T </h3>
+        <ul>
+          <li>Processeur : Intel Pentium</li>
+          <li>Stockage : Disque dur 2 To</li>
+          <li>Mémoire vive : 8 Go</li>
+          <li>Type : Lecteur-graveur DVD</li>
+        </ul>
+      </article>
+
+      <article class="a3">
+        <img src="images/carte-g.jpeg" alt="">
+        <h3>Carte graphique Nvidia MSI GeForce GTX 1080 SEA HAWK EK X </h3>
+        <ul>
+          <li>Modèle : GeForce GTX 1080</li>
+          <li>Fréquence nominale : 1708 MHz</li>
+          <li>Capacité : 8192 Mo</li>
+          <li>Interface mémoire : 256 bits</li>
+        </ul>
+      </article>
+
 
     </section>
+
+    <footer>
+      <h3>footer</h3>
+    </footer>
+
   </body>
 </html>
