@@ -1,9 +1,3 @@
-{
-  border: 1px solid;
-}
-{
-  background-image: url(images/header.jpg);
-}
 header{
   background-image: url(images/header.jpg);
   background-position:100%;
@@ -13,56 +7,73 @@ header{
   top:10px;
 }
 header img{
-  float: left;
+  position: absolute;
+  top:10%;
+  left:10%;
+  display: inline-block;
   width:10%;
-  margin:5%;
+
 }
 
 input{
+  position: absolute;
+  top:30%;
+  right:30%;
   height:35px;
   width: 600px;
-  margin-top:70px;
-  padding left: 710x;
-  padding-right: 10px;
   border: 1px solid #799D1C;
   box-shadow:0px 2px 2px #799D1C;
 }
 
-.haut {
-  float: right;
-  margin-top: 70px;
-  margin-right:90px;
-
-
+input:hover{
+  box-shadow:0px 4px 5px #799D1C;
 }
+
+.haut {
+   position: absolute;
+   top:60%;
+   right: 10%;
+}
+
 .haut a{
   text-decoration:none;
   display: inline-block;
   text-align: center;
-  font-size:10px;
+  font-size:15px;
 }
 
 span{
-  font-size: 50px;
+  font-size: 45px;
   color:#799D1C;
 }
 
+span:hover{
+  font-size: 55px;
+}
+
 .gauche{
-  background-color: blue;
+  box-shadow: 2px 2px 6px;
+  position: absolute;
   text-align: center;
-  float:left;
   width:20%;
   margin-top:15%;
   margin-left:5%;
-  border: 2px solid;
+  ;
 }
 
 .gauche a{
-  background-color: red;
+  border: 1px solid;
   display: block;
   text-decoration: none;
+  color:#799D1C;
   margin:10px;
   padding: 10px;
+}
+
+.gauche a:hover{
+  background-color:#4b4b4b;
+  color: white;
+  box-shadow: 1px 1px 3px;
 }
 
 section.ipd{
@@ -74,8 +85,7 @@ section.ipd{
   height:37%;
 }
 
-section.top{
-  background-color:red;
+section.top{;
   position: absolute;
   top:80%;
   left:30%;
@@ -88,11 +98,15 @@ h2{
   text-align: left;
 }
 article{
-  background-color:blue;
+  border:0.5px;
+  box-shadow: 1px 1px 3px;
   display: inline-block;
   vertical-align:top;
   width:32%;
   height:150%;
+}
+article:hover{
+  box-shadow: 2px 2px 6px;
 }
 
 h3{
@@ -102,15 +116,15 @@ h3{
 
 li{
   text-decoration: none;
-  font-size: 10px;
+  font-size:10px;
 }
 img{
   width:200px;
+  margin-top:10px;
 }
 
 footer{
   background-color: green;
-  bottom: 0%;
   width: 100%;
   height: 15%;
 }
