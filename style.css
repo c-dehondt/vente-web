@@ -4,7 +4,7 @@ header{
   width: 100%;
   height:30%;
   position: absolute;
-  top:10px;
+  top:1%;
 }
 header img{
   position: absolute;
@@ -12,16 +12,15 @@ header img{
   left:10%;
   display: inline-block;
   width:10%;
-
 }
 
 input{
   position: absolute;
   top:30%;
   right:30%;
-  height:35px;
-  width: 600px;
-  border: 1px solid #799D1C;
+  height:20%;
+  width: 45%;
+  border: 0.2% solid #799D1C;
   box-shadow:0px 2px 2px #799D1C;
 }
 
@@ -30,16 +29,23 @@ input:hover{
 }
 
 .haut {
-   position: absolute;
-   top:60%;
-   right: 10%;
+   position:absolute;
+   top:55%;
+   right:18%;
+   width:900px;
+   height:110px;
+   text-align: center;
 }
 
 .haut a{
   text-decoration:none;
+  width: 180px;
   display: inline-block;
   text-align: center;
   font-size:15px;
+  margin-top:10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 span{
@@ -47,8 +53,8 @@ span{
   color:#799D1C;
 }
 
-span:hover{
-  font-size: 55px;
+header span:hover{
+  font-size: 50px;
 }
 
 .gauche{
@@ -58,7 +64,6 @@ span:hover{
   width:20%;
   margin-top:15%;
   margin-left:5%;
-  ;
 }
 
 .gauche a{
@@ -97,7 +102,8 @@ section.top{;
 h2{
   text-align: left;
 }
-article{
+
+article.article{
   border:0.5px;
   box-shadow: 1px 1px 3px;
   display: inline-block;
@@ -105,7 +111,14 @@ article{
   width:32%;
   height:150%;
 }
-article:hover{
+
+article.article p{
+  border: 1px solid;
+  width: 60px;
+  margin: auto;
+}
+
+article.article:hover{
   box-shadow: 2px 2px 6px;
 }
 
@@ -124,7 +137,76 @@ img{
 }
 
 footer{
-  background-color: green;
+  background-color:#d4d4d4;
+  position:fixed;
+  bottom:0%;
   width: 100%;
-  height: 15%;
+  height:7%;
+  text-align: center;
+}
+
+footer a{
+  text-decoration:none;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  font-size:5px;
+  margin-top:5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer span{
+  font-size:300%;
+}
+
+/*page présentation produits*/
+
+img{
+  display: inline-block;
+  width:200px;
+  margin-top:10px;
+}
+
+.présentation1{
+  border: 3px solid red;
+  box-shadow:1% 1% 2%;
+  position: absolute;
+  top:33%;
+  left:30%;
+  width:70%;
+  height:85%;
+}
+
+.produit{
+  width:25%;
+  text-align: center;
+  text-decoration: none;
+}
+
+aside{
+  position: absolute;
+  top: 10%;
+  width:70%;
+  padding-left:27%;
+}
+
+.présentation2{
+  border: 3px solid red;
+  box-shadow:1% 1% 2%;
+  position: absolute;
+  top:120%;
+  left:30%;
+  width:70%;
+  height:85%;
+
+}
+
+.présentation3{
+  border: 3px solid red;
+  box-shadow:1% 1% 2%;
+  position: absolute;
+  top:207%;
+  left:30%;
+  width:70%;
+  height:106%;
 }
