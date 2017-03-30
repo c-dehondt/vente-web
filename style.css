@@ -1,103 +1,136 @@
+@media all and (max-width: 1024px)
+{}
 body{
-  width: 100%;
-  height: 100%;
+
 }
 header{
   background-image: url(images/header.jpg);
-  background-position:100%;
+  background-position: center;
+  background-size:100%;
+  padding-top:1%;
   width: 100%;
-  height:30%;
-  position: absolute;
-  top:1%;
+  height:45%;
+}
+header h1{
+  text-shadow:0px 4px 6px #799D1C;
+  text-align: center;
+}
+
+header p{
+  text-align: center;
+  font-size:130%;
+  text-shadow: 0px 4px 6px #799D1C;
 }
 header img{
-  position: absolute;
-  top:10%;
-  left:10%;
-  display: inline-block;
-  width:10%;
+  float: left;
+  margin-top:-15%;
+  margin-left:10%;
+  width:20%;
 }
 
 header input{
-  position: absolute;
-  top:30%;
-  right:30%;
-  height:20%;
-  width: 45%;
+  display: inline-block;
+  margin-left:70%;
+  width:20%;
+  height:15%;
   border: 0.2% solid #799D1C;
   box-shadow:0px 2px 2px #799D1C;
 }
 
-header input:hover{
+input:hover{
   box-shadow:0px 4px 5px #799D1C;
 }
 
-.haut {
-   position:absolute;
-   top:55%;
-   right:18%;
-   width:900px;
-   height:110px;
-   text-align: center;
+.haut {/*navigation menu*/
+   width:90%;
 }
 
 .haut a{
   text-decoration:none;
-  width: 180px;
+  font-weight: bold;
+  width:10%;
   display: inline-block;
   text-align: center;
-  font-size:15px;
-  margin-top:10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size:90%;
 }
 
 span{
-  font-size: 45px;
+  font-size:300%;
   color:#799D1C;
 }
 
-header span:hover{
-  font-size: 50px;
-}
-
-.gauche{
-  box-shadow: 2px 2px 6px;
-  position: absolute;
+.bas{/*navigation produits*/
   text-align: center;
-  width:20%;
-  margin-top:15%;
+  display:inline-block;
+  width:90%;
+  margin-top:3%;
   margin-left:5%;
 }
 
-.gauche a{
+.bas a{
   border: 1px solid;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color:#799D1C;
-  margin:10px;
-  padding: 10px;
+  margin:1%;
+  padding:1%;
 }
 
-.gauche a:hover{
+.bas a:hover{
   background-color:#4b4b4b;
   color: white;
   box-shadow: 1px 1px 3px;
 }
 
-section.ipd{
-  background-color:red;
-  position: absolute;
-  top:33%;
-  left:30%;
-  width:60%;
-  height:37%;
+@keyframes AutoSlide {
+	0%, 15%, 100% {
+		left: 0px; /*1ère image*/
+	}
+	30%, 40% {
+		left: -300px; /*2ème image*/
+	}
+	50%, 60% {
+		left: -600px; /*3ème image*/
+	}
+}
+  70%, 80%{
+    left: -900px; /*4ème image*/
+  }
+
+#slideshow {
+	position: relative;
+	width: 300px;
+	height: 150px;
+	margin:  20px auto;
+	overflow: hidden;
 }
 
-section.top{;
-  position: absolute;
-  top:80%;
-  left:30%;
+#scontent li {
+	display: inline;
+}
+
+#scontent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400%;
+	margin: 0;
+	padding: 0;
+
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#slideshow img{
+  width: 300px;
+  height: 150px;
+}
+
+section.top{/*pub top des ventes*/
+  margin-left:25%;
   width:60%;
   height:40%;
   text-align: center;
@@ -108,18 +141,17 @@ h2{
 }
 
 article.article{
-  background-image: url(images/contact.jpg);
-  border:0.5px;
-  box-shadow: 1px 1px 3px;
+  border:0.5%;
+  border-radius:2% 2% 2%;
+  box-shadow:2% 2% 2%;
   display: inline-block;
   vertical-align:top;
   width:32%;
-  height:170%;
 }
 
 article.article p{
   border: 1px solid;
-  width: 60px;
+  width:30%;
   margin: auto;
 }
 
@@ -137,24 +169,26 @@ li{
   font-size:10px;
 }
 img{
-  width:200px;
-  margin-top:10px;
+  width:25%;
+  margin-top:2%;
 }
 
 footer{
   background-color:#d4d4d4;
+  width:100%;
+  display: block;
 
 }
 
 footer a{
   text-decoration:none;
-  width: 180px;
+  width:10%;
   display: inline-block;
   text-align: center;
   font-size:5px;
-  margin-top:5px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-top:2%;
+  margin-left:10%;
+  margin-right:10%;
 
 }
 footer span{
@@ -162,65 +196,33 @@ footer span{
 }
 
 /*page présentation produits*/
-
 img{
   display: inline-block;
   width:200px;
   margin-top:10px;
 }
 
-.présentation1{
+.présentation{
   box-shadow:2% 2% 4%;
-  position: absolute;
-  top:33%;
-  left:30%;
-  width:70%;
-  height:85%;
+  display: inline-block;
+  text-align: center;
+  margin-top:5%;
+  width:90%;
+  height:60%;
 }
 
-
-.produit{
-  background-image: url(images/contact.jpg);
+.produit p{
   box-shadow:2% 2% 4%;
   width:25%;
   text-align: center;
   text-decoration: none;
 }
 
-aside{
-  background-position: center;
-  box-shadow:2% 2% 4%;
-  position: absolute;
-  top: 10%;
-  width:70%;
-  padding-left:27%;
-}
-
-.présentation2{
-  box-shadow:2% 2% 4%;
-  position: absolute;
-  top:120%;
-  left:30%;
-  width:70%;
-  height:85%;
-
-}
-
-.présentation3{
-  box-shadow:2% 2% 4%;
-  position: absolute;
-  top:207%;
-  left:30%;
-  width:70%;
-  height:106%;
-}
-
 /*page contact*/
 .contact{
   background-image: url(images/contact.jpg);
-  position: absolute;
-  top:35%;
-  left:5%;
+  margin-top:15%;
+  margin-left:5%;
   width: 90%;
   height:100%;
 }
@@ -228,4 +230,13 @@ aside{
   box-shadow:4px 4px 6px #d4d4d4;
   margin-left:45%;
   margin-top:1%;
+}
+
+/*navigation*/
+.maps{
+  border:1% solid #d4d4d4;
+  border-radius: 2% 2% 2%;
+  box-shadow: 2% 2% 6%;
+  width:70%;
+  margin-left:20%;
 }
