@@ -86,8 +86,7 @@ span:hover{
   box-shadow: 1px 1px 3px;
 }
 
-
-
+/*animation pub*/
 @keyframes AutoSlide {
 	0%, 15%, 50%, 100% {
 		left: 0px; /*1ère image*/
@@ -126,7 +125,7 @@ span:hover{
 	/*CSS3 keyframes animation*/
 	animation-name: AutoSlide;
 	animation-duration:15s;
-	animation-iteration-count: infinite;;
+	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
 
