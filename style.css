@@ -59,6 +59,10 @@ span{
   color:#799D1C;
 }
 
+span:hover{
+  color: #d4d4d4;
+}
+
 .bas{/*navigation produits*/
   text-align: center;
   display:inline-block;
@@ -82,26 +86,28 @@ span{
   box-shadow: 1px 1px 3px;
 }
 
+
+
 @keyframes AutoSlide {
-	0%, 15%, 100% {
+	0%, 15%, 50%, 100% {
 		left: 0px; /*1ère image*/
 	}
-	30%, 40% {
-		left: -300px; /*2ème image*/
+	35%, 50% {
+		left: -500px; /*2ème image*/
 	}
-	50%, 60% {
-		left: -600px; /*3ème image*/
+	60%, 80% {
+		left: -1000px; /*3ème image*/
 	}
 }
-  70%, 80%{
-    left: -900px; /*4ème image*/
-  }
 
 #slideshow {
+  box-shadow:2% 2% 6%;
 	position: relative;
-	width: 300px;
-	height: 150px;
-	margin:  20px auto;
+  left:2%;
+  margin:5%;
+  display: inline-block;
+	width:500px;
+	height:300px;
 	overflow: hidden;
 }
 
@@ -113,20 +119,20 @@ span{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 400%;
+	width:500%;
 	margin: 0;
 	padding: 0;
 
 	/*CSS3 keyframes animation*/
 	animation-name: AutoSlide;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
+	animation-duration:15s;
+	animation-iteration-count: infinite;;
 	animation-timing-function: ease-in-out;
 }
 
 #slideshow img{
-  width: 300px;
-  height: 150px;
+  width:500px;
+  height:300px;
 }
 
 section.top{/*pub top des ventes*/
