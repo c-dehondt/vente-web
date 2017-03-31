@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="images/logo.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icon.css">
     <title>Chez bon Chris</title>
@@ -12,71 +13,55 @@
     <header>
       <h1>Chez bon Chris</h1>
       <p>Tout aux meilleurs prix</p>
-      <input type="text" name="" placeholder="Ex :Recherche" size="30" maxlength="10":/>
+      <input type="text" name="recherche" placeholder="Ex :Recherche" size="30" maxlength="10"/>
       <img src="images/logo.png">
       <nav class="haut">
         <a href="index.html"><span class="icon-home3"></span><br>Home</a>
-        <a href="navigation.html"><span class="icon-location2"></span><br>Ou nous trouver!</a>
+
+      <div class="dropdown">
         <a href="#"><span class="icon-user"></span><br>Mon compte</a>
+      <div class="dropdown-content">
+          <a href="se connecter">se connecter</a>
+          <a href="créer un compte">créer un compte</a>
+      </div>
+      </div>
       </nav>
     </header>
 
-    <nav class="bas">
-      <a href="#">Ordinateur portable</a>
-      <a href="#">Ordinateur de bureau</a>
-      <a href="#">Composant</a>
-    </nav>
-
      <section class="contact">
-     <article class="c1">
+     <article class="coordonnée">
+       <img class="nous-contacter" src="images/nous-contacter.png" alt="">
        <h2>Contactez nous</h2>
        <form method="post" action="traitement.php">
-       <p>
-           <label for="nom">Votre Nom :</label>
-           <input type="text" name="nom" id="nom" placeholder="Ex : Dehondt" size="30" maxlength="10" />
-       </p>
-       <p>
-           <label for="prénom">Votre prénom :</label>
-           <input type="text" name="prénom" id="prénom" placeholder="Ex : Chris" size="30" maxlength="10" />
-       </p>
-       <p>
-           <label for="téléphone">Votre téléphone :</label>
-           <input type="téléphone" name="téléphone" id="téléphone" placeholder="Ex :06/84/22/05/33" size="30" maxlength="10" />
-       </p>
-       <p>
-           <label for="email">Votre email :</label>
-           <input type="email" name="email" id="email" placeholder="Ex : c.dehondt@live.com" size="30" maxlength="10" />
-       </p>
+       <p><label for="nom">Votre Nom :</label>
+          <input type="text" name="nom" id="nom" placeholder="Ex : Dehondt" size="30" maxlength="10" /></p>
+       <p><label for="prénom">Votre prénom :</label>
+          <input type="text" name="prénom" id="prénom" placeholder="Ex : Chris" size="30" maxlength="10" /></p>
+       <p><label for="téléphone">Votre téléphone :</label>
+           <input type="téléphone" name="téléphone" id="téléphone" placeholder="Ex :06/84/32/55/33" size="30" maxlength="10" /></p>
+       <p><label for="email">Votre email :</label>
+           <input type="email" name="email" id="email" placeholder="Ex : c.dehondt@gmail.com" size="30" maxlength="10" /></p>
       <h3>adresse</h3>
-       <p>
-           <label for="numéro">numéro :</label>
-           <input type="text" name="numéro" id="numéro" placeholder="Ex : 68" size="30" maxlength="10" />
-       </p>
-       <p>
-           <label for="Adresse">Adresse :</label>
-           <input type="text" name="Adresse" id="Adresse" placeholder="Ex : rue sainte hélène" size="30" maxlength="30" />
-       </p>
-       <p>
-           <label for="Complément d'adresse">Complément d'adresse :</label>
-           <input type="Complément d'adresse" name="Complément d'adresse" id="Complément d'adresse" placeholder="Ex : appt 336" size="30" maxlength="10" />
-       </p>
-       <p>
-           <label for="Pays">Pays :</label>
-           <input type="Pays" name="Pays" id="Pays" placeholder="Ex : France" size="30" maxlength="10" />
-       </p>
-       <p>
-          <label for="question">Votre question?</label>
-          <textarea name="question" id="question" rows="10" cols="50"></textarea>
-      </p>
-   </form>
-
+       <p><label for="numéro">numéro :</label>
+          <input type="text" name="numéro" id="numéro" placeholder="Ex : 78" size="30" maxlength="10" /></p>
+       <p><label for="Adresse">Adresse :</label>
+          <input type="text" name="Adresse" id="Adresse" placeholder="Ex : rue sainte héloie" size="30" maxlength="30" /></p>
+       <p><label for="Complément d'adresse">Complément d'adresse :</label>
+          <input type="Complément d'adresse" name="Complément d'adresse" id="Complément d'adresse" placeholder="Ex : appt 456" size="30" maxlength="10" /></p>
+       <p><label for="Pays">Pays :</label>
+          <input type="Pays" name="Pays" id="Pays" placeholder="Ex : France" size="30" maxlength="10" /></p>
+       <p><label for="question">Votre question?</label>
+          <textarea name="question" id="question" rows="10" cols="50"></textarea></p>
+       </form>
      </article>
      </section>
 
-    <footer>
-        <a href="#"><span class="icon-address-book"><br>contact</span></a>
-        <a href="#"><span class="icon-mail4"><br>contact</span></a>
-        <a href="#"><span class="icon-home3"><br>contact</span></a>
-    </footer>
+     <footer>
+         <a href="navigation.html#plan"><span class="icon-location2">ou sommes nous!</span></a>
+         <a href="navigation.html#entreprise"><span class="icon-wink">qui nous sommes!</span></a>
+         <a href="https://www.facebook.com/?stype=lo&jlou=Afd7HIz5Mv0i16k-Q0u3HJqyChQmyl4vC4HR9L69xpsgbk0kEljzilR12rxhvAqCPj1FZ_c8ZWl_Ou50lpSqNf_u&smuh=3614&lh=Ac_jT0knGE6R1Yx1"><span class="icon-facebook2"><br>facebook</span></a>
+         <a href="contact.html"><span class="icon-mail4"><br>contact</span></a>
+     </footer>
+
   </body>
 </html>

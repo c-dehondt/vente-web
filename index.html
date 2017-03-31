@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="images/logo.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icon.css">
     <title>Chez bon Chris</title>
@@ -12,24 +13,31 @@
     <header>
       <h1>Chez bon Chris</h1>
       <p>Tout aux meilleurs prix</p>
-      <input type="text" name="" placeholder="Ex :Recherche" size="30" maxlength="10":/>
+      <input type="text" name="recherche" placeholder="Ex :Recherche" size="30" maxlength="10"/>
       <img src="images/logo.png">
       <nav class="haut">
         <a href="index.html"><span class="icon-home3"></span><br>Home</a>
-        <a href="navigation.html"><span class="icon-location2"></span><br>Ou nous trouver!</a>
+
+<!-- **************************************compte client****************************************************** -->
+        <div class="dropdown">
         <a href="#"><span class="icon-user"></span><br>Mon compte</a>
+      <div class="dropdown-content">
+          <a href="se connecter">se connecter</a>
+          <a href="créer un compte">créer un compte</a>
+      </div>
+      </div>
       </nav>
     </header>
 
+<!-- **************************************navigation top ventes****************************************************** -->
     <nav class="bas">
-      <a href="#">Ordinateur portable</a>
-      <a href="#">Ordinateur de bureau</a>
-      <a href="#">Composant</a>
-
+      <a href="produit1.html#asus">Ordinateur portable</a>
+      <a href="produit1.html#pc-bureau">Ordinateur de bureau</a>
+      <a href="produit1.html#carte">Composant</a>
     </nav>
 
+<!-- **************************************images pub qui défiles**************************************************** -->
     <section>
-      <!--images pub qui défiles-->
       <div id="slideshow">
        <ul id="scontent">
          <li><img src="images/pub_pc1.jpg" alt=""></li>
@@ -51,7 +59,7 @@
     <section class="top">
       <h2><span class="icon-trophy"></span>Top vente</h2>
       <!-- le top des ventes du site-->
-      <a href="produit1.html#asus"><article class="article">
+        <a href="produit1.html#asus"><article class="article">
         <img src="images/pcp1.png" alt="">
         <h3>PC Gamer Asus GX800VH(KBL)-GY004T </h3>
           <ul>
@@ -61,9 +69,9 @@
             <li>Mémoire vive : 64 Go</li>
           </ul>
           <p>6999€00</p>
-      </article>
+      </article></a>
 
-      <a href="produit1.html#unité"><article class="article">
+        <a href="produit1.html#pc-bureau"><article class="article">
         <img src="images/pb1.png" alt="">
         <h3>Unité centrale Asus K31AN-FR062T </h3>
         <ul>
@@ -73,8 +81,7 @@
           <li>Type : Lecteur-graveur DVD</li>
         </ul>
         <p>499€00</p>
-      </article>
-      </a>
+      </article></a>
 
         <a href="produit1.html#carte"><article class="article">
         <img src="images/carte-g.jpeg" alt="">
@@ -91,9 +98,10 @@
     </section>
 
     <footer>
-        <a href="#"><span class="icon-address-book"><br>contact</span></a>
-        <a href="#"><span class="icon-mail4"><br>contact</span></a>
-        <a href="#"><span class="icon-home3"><br>contact</span></a>
+        <a href="navigation.html#plan"><span class="icon-location2">ou sommes nous!</span></a>
+        <a href="navigation.html#entreprise"><span class="icon-wink">qui nous sommes!</span></a>
+        <a href="https://www.facebook.com/?stype=lo&jlou=Afd7HIz5Mv0i16k-Q0u3HJqyChQmyl4vC4HR9L69xpsgbk0kEljzilR12rxhvAqCPj1FZ_c8ZWl_Ou50lpSqNf_u&smuh=3614&lh=Ac_jT0knGE6R1Yx1"><span class="icon-facebook2"><br>facebook</span></a>
+        <a href="contact.html"><span class="icon-mail4"><br>contact</span></a>
     </footer>
 
   </body>
