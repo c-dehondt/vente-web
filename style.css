@@ -117,7 +117,7 @@ span:hover{
 }
 /****************************************animation pub************************************************************/
 @keyframes AutoSlide {
-	0%, 15%, 100% {
+	0%, 15% {
 		left: 0px; /*1ère image*/
 	}
 	35%, 50% {
@@ -139,7 +139,7 @@ span:hover{
 }
 
 #scontent li {
-	display: inline;
+	display: inline-block;
 }
 
 #scontent {
@@ -148,13 +148,13 @@ span:hover{
 	left: 0;
 	margin: 0;
 	padding:0;
-  width:20%;
+  /*width:20%;*/
 
 	/*******************************CSS3 keyframes animation***************************************************/
-	animation-name:AutoSlide;
+	/*animation-name:AutoSlide;
 	animation-duration:15s;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;*/
 }
 
 #slideshow img{
