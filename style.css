@@ -116,51 +116,7 @@ span:hover{
   display: inline-block;
 }
 /****************************************animation pub************************************************************/
-@keyframes AutoSlide {
-	0%, 15% {
-		left: 0px; /*1ère image*/
-	}
-	35%, 50% {
-		left: -300px; /*2ème image*/
-	}
-	70%, 85% {
-		left: -600px; /*3ème image*/
-	}
-}
 
-#slideshow {
-  box-shadow:2px 2px 6px;
-  border-radius: 10px 10px 10px 10px;
-	position: relative;
-	width:300px;
-	height:150px;
-  margin: 20px auto;
-	overflow: hidden;
-}
-
-#scontent li {
-	display: inline-block;
-}
-
-#scontent {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding:0;
-  /*width:20%;*/
-
-	/*******************************CSS3 keyframes animation***************************************************/
-	/*animation-name:AutoSlide;
-	animation-duration:15s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;*/
-}
-
-#slideshow img{
-  width:300px;
-  height:150px;
-}
 
 /********************************************pub top des ventes**************************************************/
 .top{
